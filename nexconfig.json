@@ -1,0 +1,29 @@
+{
+    "name": "axum-log",
+    "version": "0.0.1",
+    "description": "Basic log middleware for axum api application.",
+    "keywords": [
+        "axum",
+        "nex",
+        "backend",
+        "log",
+        "api",
+        "recipe"
+    ],
+    "files": [
+        "src/common",
+        "recipes/axum-log/README.md"
+    ],
+    "setup": {
+        "files": {
+            "src/common": {
+                "middlewares": {
+                    "log_middleware.rs": "src/common/middlewares",
+                    "mod.rs": "src/common/middlewares"
+                },
+                "mod.rs": "src/common"
+            },
+            "recipes/axum-log/README.md": "recipes/axum-log"
+        }
+    }
+}
